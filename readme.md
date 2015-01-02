@@ -1,32 +1,27 @@
 Mybema
 ======
-[![Circle CI](https://circleci.com/gh/mybema/mybema/tree/master.svg?style=svg&circle-token=90c4da5a58b2d537ebc3e508bae7b1aa931347e0)](https://circleci.com/gh/mybema/mybema/tree/master)
 
 Mybema is an open source community platform. It allows users to participate in discussions and lets you create knowledgebase articles for your community.
 
 Installation
 ============
-You can install Mybema in one of two ways at the moment. We recommend using Ansible.
 
-Using Ansible
--------------
-The easy way to setup Mybema is to use the [mybema-config](http://www.github.com/pawel2105/mybema-config) repository. It uses [Ansible](http://www.ansible.com) to provision a VPS on [DigitalOcean](http://www.digitalocean.com).
+This is my installation of Mybema on [Ninefold](http://ninefold.com/).
 
-The hard way
-------------
-If you don't want to use Ansible, you can run the following steps. First clone the repo:
+Local deployment
+----------------
 
-    git clone git@github.com:pawel2105/mybema.git
+    git clone git@github.com:mybema/mybema.git
 
 Then install the dependencies:
 
     bundle install
 
-Install Postgres if you haven't alrady
+Install Postgres if you haven't already
 
     brew install postgresql
 
-Install Redis if you haven't alrady
+Install Redis if you haven't already
 
     brew install redis
 
@@ -66,6 +61,10 @@ Create a secret token using `rake secret` and add it into the file. You will als
 From here you should be good to start up the server:
 
     bundle exec rails s
+
+Ninefold deployment
+-------------------
+TBD
 
 Running the tests
 =================
