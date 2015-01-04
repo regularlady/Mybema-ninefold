@@ -1,1 +1,1 @@
-web: bundle exec puma start -p 3000
+web: bundle exec puma -C config/puma.rb
